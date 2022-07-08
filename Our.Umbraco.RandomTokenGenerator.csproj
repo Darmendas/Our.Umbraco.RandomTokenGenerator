@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ContentTargetFolders>.</ContentTargetFolders>
+    <Product>Our.Umbraco.RandomTokenGenerator</Product>
+    <PackageId>Our.Umbraco.RandomTokenGenerator</PackageId>
+    <Title>Our.Umbraco.RandomTokenGenerator</Title>
+    <Description>...</Description>
+    <PackageTags>umbraco plugin package</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Umbrace</Authors>
+    <Company>Umbrace</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Web.Website" Version="9.1.0" />
+    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="App_Plugins\Our.Umbraco.RandomTokenGenerator\**">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <None Include="build\**">
+      <Pack>true</Pack>
+      <PackagePath>buildTransitive</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="App_Plugins\Our.Umbraco.RandomTokenGenerator\tokenGenerator.controller.js" />
+    <None Remove="App_Plugins\Our.Umbraco.RandomTokenGenerator\tokenGenerator.css" />
+    <None Remove="App_Plugins\Our.Umbraco.RandomTokenGenerator\tokenGenerator.html" />
+  </ItemGroup>
+</Project>

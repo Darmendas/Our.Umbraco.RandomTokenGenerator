@@ -1,0 +1,21 @@
+﻿{
+	"propertyEditors":[
+		{
+			"alias": "TokenGenerator",
+			"name": "Token Generator",
+			"icon": "icon-list",
+			"group": "Common",
+			"editor": {
+				"view": "~/App_Plugins/Our.Umbraco.RandomTokenGenerator/tokenGenerator.html"
+			}
+		}
+	],
+	"css": [
+		"~/App_Plugins/Our.Umbraco.RandomTokenGenerator/tokenGenerator.css"
+	],
+	"javascript": [
+		"/App_Plugins/Our.Umbraco.RandomTokenGenerator/tokenGenerator.controller.js"
+	]
+}
+
+

@@ -25,7 +25,7 @@ jobs:
         uses: brandedoutcast/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: Our.Umbraco.RandomTokenGenerator/Our.Umbraco.RandomTokenGenerator.csproj
+          PROJECT_FILE_PATH: Our.Umbraco.RandomTokenGenerator.csproj
           
           # API key to authenticate with NuGet server
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
